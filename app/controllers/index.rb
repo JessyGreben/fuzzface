@@ -1,12 +1,17 @@
 enable :sessions
+require 'sinatra/base'
 
-get "/" do
-	if session[:user]
-		erb :index
-	else
-		redirect "/sign_in"
-	end
-end
+# module ChatDemo
+# 	class App < Sinatra::Base
+		get "/" do
+			if session[:user]
+				erb :index
+			else
+				redirect "/sign_in"
+			end
+		end
+# 	end
+# end
 
 put "/sign_in" do
 

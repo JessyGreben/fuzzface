@@ -17,6 +17,10 @@ gem 'shotgun'
 
 gem 'httparty'
 
+gem 'thin'
+gem "faye-websocket"
+gem "puma"
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
